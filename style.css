@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  box-sizing: border-box;
+}
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid yellow; */
+    animation: change 6s linear forwards;
+    animation-delay: 1s ;
+}  
+@keyframes change{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+div:nth-child(1){ 
+    background: linear-gradient(to bottom right, #72efdd,#6930c3);
+    border-radius: 50% 50% 0 50%; 
+    transform: skew(23deg,23deg) translate(-75px, -75px);
+
+}
+div:nth-child(2){ 
+    background: linear-gradient(to bottom left,#72efdd,#6930c3);
+    border-radius: 50% 50% 50% 0; 
+    transform: skew(-23deg,-23deg) translate(75px, -75px);
+
+}
+div:nth-child(3){ 
+    background: linear-gradient(to top right,#72efdd,#6930c3);
+    border-radius: 50% 0 50%  50%; 
+    transform: skew(-23deg,-23deg) translate(-75px, 75px);
+
+}
+div:nth-child(4){ 
+    background: linear-gradient(to top left,#72efdd,#6930c3);
+    border-radius: 0 50% 50% 50%; 
+    transform: skew(23deg,23deg) translate(75px, 75px);
+
+}
+div:nth-child(5){ 
+    background: linear-gradient(to bottom right, #72efdd,#6930c3);
+    border-radius: 50% 50% 0 50%; 
+    transform: rotateZ(45deg)skew(23deg,23deg) translate(-75px, -75px);
+
+}
+div:nth-child(6){ 
+    background: linear-gradient(to bottom left,#72efdd,#6930c3);
+    border-radius: 50% 50%  50% 0; 
+    transform: rotateZ(45deg)skew(-23deg,-23deg) translate(75px, -75px);
+
+}
+div:nth-child(7){ 
+    background: linear-gradient(to top right, #72efdd,#6930c3);
+    border-radius: 50% 0 50%  50%; 
+    transform: rotateZ(45deg) skew(-23deg,-23deg) translate(-75px, 75px);
+
+}
+div:nth-child(8){ 
+    background: linear-gradient(to top left, #72efdd,#6930c3);
+    border-radius: 0 50% 50%  50%; 
+    transform: rotateZ(45deg) skew(23deg,23deg) translate(75px, 75px);
+
+}
+div:nth-child(9){
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid #e5989b ; */
+    border-radius: 50%;
+    background: radial-gradient(#7400b8, #6930c3 65%);
+    filter: blur(5px);
+}
+p {
+    
+    color: white;
+}
